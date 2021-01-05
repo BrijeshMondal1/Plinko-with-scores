@@ -5,8 +5,8 @@ class Plinko {
             friction: 0,
             isStatic:true
         }
-        this.r = 10;
-        this.body = Bodies.circle(x, y, this.r, options);
+        this.radius = 10;
+        this.body = Bodies.circle(x, y, this.radius, options);
         
         World.add(world, this.body);
     }
@@ -22,7 +22,7 @@ class Plinko {
         noStroke();
         fill("white");
         ellipseMode(RADIUS);
-        ellipse(0,0,this.r,this.r);
+        ellipse(0,0,this.radius,this.radius);
         pop();
     }
 
